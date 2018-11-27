@@ -554,20 +554,21 @@ tr{
 
 #list_img li{
   list-style: none;
+  float: left;
   display: inline-block;
-  width:48%;
-  margin:0px;
-  padding:0px;
+  width: 43%;
+  margin: 0 0 0 3px;
+  padding: 0px;
 }
 
 #list_img li img{
   width:100%;
-    cursor: pointer;
+  cursor: pointer;
 }
 
   @media (max-width: 550px) {
     #list_img li {
-      list-style-type: none;
+      list-style: none;
       display: inline-block;
       overflow:hidden;  
       width: 18%;
