@@ -47,16 +47,18 @@ body {
   .item-title {
     display: none; } }
 .item {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap; }
 
 .item_image {
-  width: calc(98% / 3);
+  width: 33%;
   font-size: 1.1rem;
   padding: 10px;
   box-sizing: border-box;
   background-color: white;
-  margin: 1px;
+  margin-bottom: 3px;
   text-align: center; }
   .item_image .item_title {
     text-align: left; }
@@ -67,12 +69,40 @@ body {
 
 @media (max-width: 550px) {
   .item {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    width: 100%; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
 
   .item_image {
-    width: 49%; } }
+    list-style: none;
+    display: inline-block;
+    width: 49.7%; } }
+.guides {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; }
+
+.guide {
+  width: 50%;
+  font-size: 1.1rem;
+  padding: 15px;
+  background-color: white;
+  margin-right: 3px; }
+  .guide .guide_title {
+    color: #887f69;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-bottom: 10px; }
+  .guide .guide_content {
+    color: #887f69;
+    padding-bottom: 5px; }
+  .guide img {
+    padding-bottom: 5px; }
+  .guide p {
+    margin-bottom: 10px; }
+
 .guide-title {
   margin: 30px 0 20px 0; }
 
@@ -88,41 +118,19 @@ body {
     margin-top: 20px; }
 
   .guide-title {
-    display: none; } }
-.guides {
-  display: flex;
-  max-width: 99%;
-  margin-bottom: 50px; }
+    display: none; }
 
-.guide {
-  width: 45%;
-  font-size: 1.1rem;
-  padding: 15px;
-  background-color: white;
-  margin: 2px; }
-  .guide .guide_title {
-    color: #887f69;
-    font-size: 1.3rem;
-    font-weight: bold;
-    padding-bottom: 10px; }
-  .guide .guide_content {
-    color: #887f69;
-    padding-bottom: 5px; }
-  .guide img {
-    padding-bottom: 5px; }
-  .guide p {
-    margin-bottom: 10px; }
-
-@media (max-width: 550px) {
   .guides {
     display: flex;
     flex-wrap: wrap; }
     .guides .guide {
-      width: 100%; } }
+      width: 100%;
+      margin-bottom: 3px; } }
 .item_search {
   display: block;
   background-color: white;
-  padding: 10px; }
+  padding: 10px;
+  margin-bottom: 30px; }
   .item_search .search {
     margin: 0 auto;
     position: relative;
@@ -203,7 +211,8 @@ body {
 #pagetop {
   position: absolute;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+  margin-bottom: -30px; }
 
 @media (max-width: 550px) {
   #pagetop {
@@ -244,7 +253,7 @@ footer {
   .pan .home a {
     text-decoration: none;
     color: #887f69; }
-  .pan .home .text {
+  .pan .home span {
     padding: 0 5px; }
   .pan .category {
     padding: 0 5px;
