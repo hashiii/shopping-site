@@ -440,21 +440,17 @@ tr{
 
 #price{
   display: flex;
-  justify-content: space-between;
     
   .price{
-    display:flex;
-    align-items: center;
-    padding: 20px 0px 20px 0px;
     border-top: 1px solid #e3e8cf;
     border-bottom: 1px solid #e3e8cf;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
     .price_maney{
-      margin-left: 40px;
-    }
-    h5{
-	display:table-cell;
-	text-align:center;
-	vertical-align:middle; 
+      margin-left: 20px;
+      padding-top: 15px;
       color: #e80f66;
       font-style: oblique;
       span{
@@ -462,10 +458,13 @@ tr{
         font-size: 1.3rem;
       }
     }
-  }
 }
 
-  
+    @media (max-width: 550px) {
+        .price_maney{
+          margin: 0 60px;
+        }
+    }
 
 .sp_cart{
   display: none;
